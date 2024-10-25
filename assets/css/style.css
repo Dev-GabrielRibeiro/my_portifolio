@@ -1,0 +1,103 @@
+:root{
+    --cor-prim: #2F406B;
+    --cor-sec: #DEDFD7;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Mono", monospace;
+}
+
+body{
+    background-color: var(--cor-prim);
+}
+
+.nav-bar {
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.nav-bar ul li a img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.nav-bar ul li a img:hover {
+    width: 45px;
+}
+
+.container{
+    height: 500px;
+    display: flex;
+    text-align: center; /*alinhamento horizontal*/
+    align-items: center;/*alinhamento vertical*/
+    justify-content: center;/*alinhamento do conteudo*/
+}
+
+.container .imagem {
+    margin-right: 20px;
+}
+
+.container .imagem img {
+    width: 250px;
+    border-radius: 50%;
+}
+.container .imagem .imgs{
+    overflow: hidden;
+    height: 0;
+}
+
+.container .imagem .mostrar{
+    transition: 1s;
+    height: 100px !important;
+}
+
+.container .imagem .imgs img {
+    border-radius: 0;
+    width: 50px;
+    margin: 10px 10px;
+}
+
+.container .conteudo{
+    width: 400px;
+    margin-left: 20px;
+    color: var(--cor-sec);
+}
+
+.container .conteudo h1{
+    font-size: 40px;
+}
+
+.container .conteudo h1 span img{
+    width: 40px;
+}
+
+.container .conteudo h3{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.container .conteudo p{
+    font-size: 18px;
+}
+
+.container .conteudo p:hover{
+    transition: ease-out 1s;
+    background-color: var(--cor-sec);
+    color: var(--cor-prim);
+    border-radius: 30px;
+}
