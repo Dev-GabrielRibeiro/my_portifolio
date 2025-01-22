@@ -94,10 +94,3 @@ ul li{
 .container .conteudo p{
     font-size: 18px;
 }
-
-.container .conteudo p:hover{
-    transition: ease-out 1s;
-    background-color: var(--cor-sec);
-    color: var(--cor-prim);
-    border-radius: 30px;
-}
